@@ -87,7 +87,7 @@ class TestDBStorage(unittest.TestCase):
 
         all_objects = session.query(State).all()
 
-        self.assertTrue(len(all_objects) >  0)
+        self.assertTrue(len(all_objects) > 0)
 
     @unittest.skipIf(models.storage_t != 'db', "not testing db storage")
     def test_new(self):
@@ -167,4 +167,3 @@ class TestDBStorage(unittest.TestCase):
 
         all_occurrence = storage.count()
         self.assertEqual(all_occurrence, len(storage.all()))
-

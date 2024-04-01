@@ -157,4 +157,4 @@ class TestFileStorage(unittest.TestCase):
         self.assertEqual(state_occurence, len(storage.all(State)))
 
         all_occurrence = storage.count()
-        self.assertEqual(all_occurrence, len(storage.all())) 
+        self.assertEqual(all_occurrence, len(storage.all()))
