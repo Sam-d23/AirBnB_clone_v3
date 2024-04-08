@@ -7,10 +7,12 @@ from flask import jsonify
 from ..app import app
 from models.engine.db_storage import *
 
+
 @app_views.route('/status')
 def status():
     """The status of the api is returned"""
     return jsonify({"status": "OK"})
+
 
 @app.route('/api/v1/stats')
 def retrieve():
